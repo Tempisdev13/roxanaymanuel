@@ -41,8 +41,13 @@
         <br>
         <label id="texto-normal" class="mt-">Presiona el <i class="fa-solid fa-heart"></i> para pausar nuestra
             canción</label>
-        <img class="img-play mt-3" src="assets/img/play.png" alt="">
-        <label id="texto-normal-mont" class="mt-2 m-4">Dios permitió que nos encontráramos y próximamente nos dará su
+
+            <img class="img-play mt-3" src="assets/img/play.png" alt="Reproducir" id="play-button">
+
+            <audio id="audio" src="assets/vengodelfuturo.mp3"></audio>
+        
+
+            <label id="texto-normal-mont" class="mt-2 m-4">Dios permitió que nos encontráramos y próximamente nos dará su
             bendición para ser instrumentos de su amor y de su gracia como esposos. ¡La felicidad se completa!</label>
         <img class="img-play-flor mt-4" src="assets/img/flores.png" alt="">
         <label id="texto-normal-mont" class="mt-4">Con la bendicion de nuestros padres</label>
@@ -141,7 +146,7 @@
         </div>
 
         <div class="row justify-content-center" >
-            <button class="btn-primario">Ver mapa</button>
+            <a href="https://maps.app.goo.gl/MCxfwYbApXVhjzXU6" class="btn-primario">Ver mapa</a>
         </div>
 
 
@@ -169,7 +174,7 @@
         </div>
         
         <div class="row justify-content-center" >
-            <button class="btn-primario">Ver mapa</button>
+            <a href="https://maps.app.goo.gl/XVMovfLFRKHocXQ7A" class="btn-primario">Ver mapa</a>
         </div>
 
         <img src="assets/img/foto-3.jpg" alt="" id="foto-tiempo" class="mt-4">
@@ -208,8 +213,8 @@
         <label id="texto-normal-mont" class="mx-4">Tu presencia es importante para nosotros, por favor confirmanos tu asistencia por WhatsApp hasta el 10 de Diciembre</label>
         <div class="p-3">
 
-            <button class="btn-primario mx-2">Roxana</button>
-            <button class="btn-primario mx-2">Manuel</button>
+            <a href="wa.link/ej2khi" class="btn-primario mx-2" >Roxana</a>
+            <a href="wa.link/3hvdhh" class="btn-primario mx-2">Manuel</a>
 
 
         </div>
@@ -277,6 +282,17 @@
                 console.error('Error al copiar el texto: ', err);
             });
     });
+
+    const playButton = document.getElementById('play-button');
+        const audio = document.getElementById('audio');
+
+        playButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
 
 
 </script>
