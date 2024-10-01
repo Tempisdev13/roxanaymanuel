@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'edwardian';
+    src: url('edwardianscriptitc.ttf') format('truetype');
+    font-weight: normal; /* Puedes cambiarlo a bold, etc. */
+    font-style: normal;  /* Puedes cambiarlo a italic, etc. */
+}
 
 
 #nombre-boda{
     font-family: "Aboreto", system-ui;
     color: antiquewhite;
 }
+
+
 
 
 
@@ -110,14 +118,14 @@ html, body {
 
 #texto-normal{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Aboreto", system-ui;
     margin: 0px;
 }
 
 #texto-normal-mont{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     font-weight: 600;
@@ -162,6 +170,7 @@ html, body {
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .body-noscasamos{
     background: rgb(168,178,188);
@@ -253,7 +262,24 @@ html, body {
 
     .cuenta-banco{
         width: 80%;
-        background-color: white;
+       
+
+
+
+
+
+
+
+        border: none;
+        background-color:#fff ;
+        color: #253F5A;
+        padding: 6px;
         border-radius: 10px;
-        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-weight: 600;
+
+
+
+
     }
