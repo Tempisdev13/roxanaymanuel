@@ -30,16 +30,21 @@
 
 <body>
 
+    <div class="celulares d-none">
+        <h1>Contenido para dispositivos móviles</h1>
+        <p>Este contenido solo es visible en móviles.</p>
+    </div>
+
     <div class="body">
         <div class="overlay">
-            <p id="nombre-boda"> Roxana<br> & <br>Manuel </p>
+            <img class="img-play mt-3" src="assets/img/rym.png" alt="Reproducir" id="play-button">
         </div>
     </div>
 
     <div class="body-final ">
         <label id="casamos">¡Nos casamos!</label>
         <br>
-        <label id="texto-normal" class="mt-">Presiona el <i class="fa-solid fa-heart"></i> para pausar nuestra
+        <label id="texto-normal" class="mt-">Presiona el <i class="fa-solid fa-heart"></i> para escuchar nuestra
             canción</label>
 
             <img class="img-play mt-3" src="assets/img/play.png" alt="Reproducir" id="play-button">
@@ -52,7 +57,7 @@
         <img class="img-play-flor mt-4" src="assets/img/flores.png" alt="">
         <label id="texto-normal-mont" class="mt-4">Con la bendicion de nuestros padres</label>
         <br>
-        <label id="texto-normal" class="mt-4">Del novio</label>
+        <label id="texto-normal" class="mt-4">De el novio</label>
         <br>
         <label id="texto-normal-mont" class="">Paulo Elías López Morales</label>
         <br>
@@ -114,7 +119,6 @@
     <div class="body-noscasamos text-center justify-content-center">
         <p id="texto-normal" class="py-4" style="font-size: 24px;">¡Nos casamos!</p>
         <img class="img-play mt-3" src="assets/img/fecha.png" alt="">
-        <img class="img-anillos mt-3" src="assets/img/anillos.png" alt="">
 
         <div class="row justify-content-center">
             <img class="img-anillos mt-3" src="assets/img/iglesia.webp" alt="">
@@ -274,7 +278,6 @@
         const texto = label.textContent;
         navigator.clipboard.writeText(texto)
             .then(() => {
-                alert('Texto copiado: ' + texto);
             })
             .catch(err => {
                 console.error('Error al copiar el texto: ', err);
@@ -292,6 +295,30 @@
             }
         });
 
+
+        window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    loader.style.display = 'none';
+    content.style.display = 'block';
+});
+
+
+
+// script.js
+window.addEventListener('load', function() {
+    const celularesDiv = document.querySelector('.celulares');
+
+    if (window.innerWidth > 768) { // Ajusta este valor según tus necesidades
+        document.body.innerHTML = '<h1>Esta página solo está disponible en dispositivos móviles.</h1>';
+        document.body.style.textAlign = 'center'; // Centrar el texto
+        document.body.style.margin = '0';
+        document.body.style.padding = '20px';
+    } else {
+        // Mostrar contenido para dispositivos móviles
+    }
+});
 
 </script>
 
