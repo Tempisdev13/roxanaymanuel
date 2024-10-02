@@ -76,7 +76,7 @@
             font-size: 18px;
             font-weight: 600;
           "
-          >28/08/2024</label
+          >28/12/2024</label
         >
       </div>
       <img src="assets/img/logorym2.png" alt="" width="80%" class="curtain-image" style="" />
@@ -243,7 +243,17 @@
         data-aos="fade-up"
       />
 
-      <img src="assets/img/foto-4.jpg" alt="" id="foto-tiempo" class="mt-4"  data-aos="fade-up"/>
+      <div class="carousel">
+        <div class="carousel-images">
+            <img src="assets/img/foto-1c.jpg" class="active" alt="Imagen 1">
+            <img src="assets/img/foto-2c.jpg" class="active" alt="Imagen 1">
+            <img src="assets/img/foto-3c.jpg" class="active" alt="Imagen 1">
+            <img src="assets/img/foto-4c.jpg" class="active" alt="Imagen 1">
+
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
     </div>
 
     <div class="body-final text-center justify-content-center">
@@ -254,8 +264,8 @@
         Lluvia de sobres
       </p>
       <label id="texto-normal-mont" class="mx-4" data-aos="fade-up"
-        >Gracias por tu compañía en nuestra nueva etapa. Si quieres tener un
-        detalle con nosotros, ayúdanos a tener nuestra luna de miel
+        >Que nos acompañes es lo más importante! Y si está en tu disposición realizar una muestra de
+        cariño estaremos muy agradecidos.
         <i class="fa-solid fa-heart"></i>.</label
       >
 
@@ -288,6 +298,12 @@
       </div>
     </div>
 
+
+
+   
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
   </body>
@@ -299,6 +315,34 @@
   
   <script>
     AOS.init();
+
+
+    let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    
+    const offset = -currentSlide * 100; // Move the slides
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+}
+
+function moveSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Mostrar la primera imagen al cargar
+showSlide(currentSlide);
+
+
+
+
 
     // Fecha objetivo: 28 de diciembre de 2024
     const fechaObjetivo = new Date("2024-12-28T00:00:00").getTime();
