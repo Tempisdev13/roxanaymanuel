@@ -1,346 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<!-- CSS de Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <!-- CSS de Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1"
+  />
 
-<link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <link rel="stylesheet" href="assets/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+    rel="stylesheet"
+  />
 
-<body>
-
-
+  <body>
     <div class="curtain" id="curtain">
-        <div class="curtain-left"><label for="28/08/2024" id="fecha" style="top: 0;display: flex;position: absolute;left: 10px; font-size: 32px; font-weight: 600;">Nuestra Boda</label></div>
-        <div class="curtain-right"><label for="28/08/2024" id="fecha" style="bottom: 0;display: flex;position: absolute;right: 10px; font-size: 18px; font-weight: 600;">28/08/2024</label></div>
-        <img src="assets/img/rym2.png" alt="" width="80%" class="curtain-image">
+      <div class="curtain-left">
+        <label
+          for="28/08/2024"
+          id="fecha"
+          style="
+            top: 0;
+            display: flex;
+            position: absolute;
+            left: 10px;
+            font-size: 32px;
+            font-weight: 600;
+          "
+          >Nuestra Boda</label
+        >
+      </div>
+      <div class="curtain-right">
+        <label
+          for="28/08/2024"
+          id="fecha"
+          style="
+            bottom: 0;
+            display: flex;
+            position: absolute;
+            right: 10px;
+            font-size: 18px;
+            font-weight: 600;
+          "
+          >28/08/2024</label
+        >
+      </div>
+      <img src="assets/img/rym2.png" alt="" width="80%" class="curtain-image" />
     </div>
-    
 
     <div class="celulares d-none">
-        <h1>Contenido para dispositivos móviles</h1>
-        <p>Este contenido solo es visible en móviles.</p>
+      <h1>Contenido para dispositivos móviles</h1>
+      <p>Este contenido solo es visible en móviles.</p>
     </div>
 
-    <div class="body">
-      
+    <div class="body"></div>
+
+    <div class="body-final">
+      <label id="casamos">¡Nos casamos!</label>
+      <br />
+      <label id="texto-normal" class="mt-"
+        >Presiona el <i class="fa-solid fa-heart"></i> para escuchar nuestra
+        canción</label
+      >
+
+      <img
+        class="img-play mt-3"
+        src="assets/img/play.png"
+        alt="Reproducir"
+        id="play-button"
+      />
+
+      <audio id="audio" src="assets/vengodelfuturo.mp3" autoplay></audio>
+
+      <label id="texto-normal-mont" class="mt-2 m-4"
+        >Dios permitió que nos encontráramos y próximamente nos dará su
+        bendición para ser instrumentos de su amor y de su gracia como esposos.
+        ¡La felicidad se completa!</label
+      >
+      <img class="img-play-flor mt-4" src="assets/img/flores.png" alt="" />
+      <label id="texto-normal-mont" class="mt-4"
+        >Con la bendicion de nuestros padres</label
+      >
+      <br />
+      <label id="texto-normal" class="mt-4">De el novio</label>
+      <br />
+      <label id="texto-normal-mont" class="">Paulo Elías López Morales</label>
+      <br />
+      <label id="texto-normal-mont" class=""
+        >Carmen Patricia González Vázquez</label
+      >
+      <br />
+
+      <label id="texto-normal" class="mt-4">De la novia</label>
+      <br />
+      <label id="texto-normal-mont" class="">Armando Hernandez Mendoza</label>
+      <br />
+      <label id="texto-normal-mont" class=""
+        >Maria Guadalupe Elizalde Reynaga</label
+      >
+      <br />
+
+      <img src="assets/img/foto-2.jpg" alt="" id="foto-tiempo" class="mt-4" />
     </div>
 
-    <div class="body-final ">
-        <label id="casamos">¡Nos casamos!</label>
-        <br>
-        <label id="texto-normal" class="mt-">Presiona el <i class="fa-solid fa-heart"></i> para escuchar nuestra
-            canción</label>
-
-            <img class="img-play mt-3" src="assets/img/play.png" alt="Reproducir" id="play-button">
-
-            <audio id="audio" src="assets/vengodelfuturo.mp3" autoplay></audio>
-        
-
-            <label id="texto-normal-mont" class="mt-2 m-4">Dios permitió que nos encontráramos y próximamente nos dará su
-            bendición para ser instrumentos de su amor y de su gracia como esposos. ¡La felicidad se completa!</label>
-        <img class="img-play-flor mt-4" src="assets/img/flores.png" alt="">
-        <label id="texto-normal-mont" class="mt-4">Con la bendicion de nuestros padres</label>
-        <br>
-        <label id="texto-normal" class="mt-4">De el novio</label>
-        <br>
-        <label id="texto-normal-mont" class="">Paulo Elías López Morales</label>
-        <br>
-        <label id="texto-normal-mont" class="">Carmen Patricia González Vázquez</label>
-        <br>
-
-        <label id="texto-normal" class="mt-4">De la novia</label>
-        <br>
-        <label id="texto-normal-mont" class="">Armando Hernandez Mendoza</label>
-        <br>
-        <label id="texto-normal-mont" class="">Maria Guadalupe Elizalde Reynaga</label>
-        <br>
-
-       
-        <img src="assets/img/foto-2.jpg" alt="" id="foto-tiempo" class="mt-4">
-    </div>
-
-  
     <div class="body-final text-center justify-content-center">
+      <label id="texto-normal" class="">El gran día empieza en</label>
 
-
-
-        <label id="texto-normal" class="">El gran día empieza en</label>
-
-
-
-        <div class="contador  mt-4 mx-4">
-            <div class="row w-100 justify-content-center">
-                <div class="col-3 text-center">
-                    <div id="dias" class="tiempo-resta">00</div>
-                </div>
-                <div class="col-3 text-center">
-                    <div id="horas" class="tiempo-resta">00</div>
-                </div>
-                <div class="col-3 text-center">
-                    <div id="minutos" class="tiempo-resta">00 </div>
-                </div>
-                <div class="col-3 text-center">
-                    <div id="segundos" class="tiempo-resta">00 </div>
-                </div>
-            </div>
-
-            <div class="row w-100 justify-content-center">
-                <div class="col-3 text-center">
-                    <div class="tiempo-resta-dato">Días</div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="tiempo-resta-dato">Horas</div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="tiempo-resta-dato">Minutos</div>
-                </div>
-                <div class="col-3 text-center">
-                    <div class="tiempo-resta-dato">Segundos</div>
-                </div>
-            </div>
-
+      <div class="contador mt-4 mx-4">
+        <div class="row w-100 justify-content-center">
+          <div class="col-3 text-center">
+            <div id="dias" class="tiempo-resta">00</div>
+          </div>
+          <div class="col-3 text-center">
+            <div id="horas" class="tiempo-resta">00</div>
+          </div>
+          <div class="col-3 text-center">
+            <div id="minutos" class="tiempo-resta">00</div>
+          </div>
+          <div class="col-3 text-center">
+            <div id="segundos" class="tiempo-resta">00</div>
+          </div>
         </div>
 
-
-
-
-
-
-        <p id="texto-normal" class="py-4" style="font-size: 24px;">¡Nos casamos!</p>
-        <img class="img-play mt-3" src="assets/img/fecha.png" alt="">
-
-        <div class="row justify-content-center">
-            <img class="img-anillos mt-3" src="assets/img/iglesia.webp" alt="">
+        <div class="row w-100 justify-content-center">
+          <div class="col-3 text-center">
+            <div class="tiempo-resta-dato">Días</div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="tiempo-resta-dato">Horas</div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="tiempo-resta-dato">Minutos</div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="tiempo-resta-dato">Segundos</div>
+          </div>
         </div>
+      </div>
 
+      <p id="texto-normal" class="py-4" style="font-size: 24px">
+        ¡Nos casamos!
+      </p>
+      <img class="img-play mt-3" src="assets/img/fecha.png" alt="" />
 
-        <div class="row text-center justify-content-center my-3">
-            <p id="texto-normal" style="font-size: 22px;"> Ceremonia religiosa</p>
-        </div>
+      <div class="row justify-content-center">
+        <img class="img-anillos mt-3" src="assets/img/iglesia.webp" alt="" />
+      </div>
 
-        <div class="row text-center justify-content-center">
-            <p class="texto-datos"> Hora: 14:00 pm</p>
-        </div>
+      <div class="row text-center justify-content-center my-3">
+        <p id="texto-normal" style="font-size: 22px">Ceremonia religiosa</p>
+      </div>
 
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Hora: 14:00 pm</p>
+      </div>
 
-        <div class="row text-center justify-content-center">
-            <p class="texto-datos"> Parroquia Dulce Nombre de Jesús</p>
-        </div>
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Parroquia Dulce Nombre de Jesús</p>
+      </div>
 
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Xicotencatl, Tamaulipas</p>
+      </div>
 
+      <div class="row justify-content-center">
+        <a href="https://maps.app.goo.gl/MCxfwYbApXVhjzXU6" class="btn-primario"
+          >Ver mapa</a
+        >
+      </div>
 
-        <div class="row text-center justify-content-center">
-            <p  class="texto-datos"> Xicotencatl, Tamaulipas</p>
-        </div>
+      <div class="row justify-content-center">
+        <img class="img-anillos mt-4" src="assets/img/copas.png" alt="" />
+      </div>
 
-        <div class="row justify-content-center" >
-            <a href="https://maps.app.goo.gl/MCxfwYbApXVhjzXU6" class="btn-primario">Ver mapa</a>
-        </div>
+      <div class="row text-center justify-content-center my-3">
+        <p id="texto-normal" style="font-size: 22px">Recepción</p>
+      </div>
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Hora: 16:00 pm</p>
+      </div>
 
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Palapa Loma Alta - Palapa de Bache</p>
+      </div>
 
+      <div class="row text-center justify-content-center">
+        <p class="texto-datos">Loma Alta, Tamaulipas</p>
+      </div>
 
+      <div class="row justify-content-center">
+        <a href="https://maps.app.goo.gl/XVMovfLFRKHocXQ7A" class="btn-primario"
+          >Ver mapa</a
+        >
+      </div>
 
-
-        <div class="row justify-content-center">
-            <img class="img-anillos mt-4" src="assets/img/copas.png" alt="">
-        </div>
-
-
-        <div class="row text-center justify-content-center my-3">
-            <p id="texto-normal" style="font-size: 22px;"> Recepción</p>
-        </div>
-        <div class="row text-center justify-content-center">
-            <p class="texto-datos"> Hora: 16:00 pm</p>
-        </div>
-
-        <div class="row text-center justify-content-center">
-            <p class="texto-datos">Palapa Loma Alta - Palapa de Bache</p>
-        </div>
-        
-
-
-
-        <div class="row text-center justify-content-center">
-            <p  class="texto-datos"> Loma Alta, Tamaulipas</p>
-        </div>
-        
-        <div class="row justify-content-center" >
-            <a href="https://maps.app.goo.gl/XVMovfLFRKHocXQ7A" class="btn-primario">Ver mapa</a>
-        </div>
-
-        <img src="assets/img/foto-3.jpg" alt="" id="foto-tiempo" class="mt-4">
-
+      <img src="assets/img/foto-3.jpg" alt="" id="foto-tiempo" class="mt-4" />
     </div>
 
+    <div class="body-final text-center justify-content-center">
+      <p id="texto-normal" class="py-4" style="font-size: 24px">Intinerario</p>
 
+      <img
+        class="img-play mt-3"
+        src="assets/img/dancing2.png"
+        alt=""
+        style="padding-bottom: 30px"
+      />
 
-    <div class="body-final text-center justify-content-center ">
-        <p id="texto-normal" class="py-4" style="font-size: 24px;">Intinerario</p>
-    
-        <img class="img-play mt-3" src="assets/img/dancing2.png" alt="" style="padding-bottom: 30px;">
-
-        <img src="assets/img/foto-4.jpg" alt="" id="foto-tiempo" class="mt-4">
-
+      <img src="assets/img/foto-4.jpg" alt="" id="foto-tiempo" class="mt-4" />
     </div>
 
+    <div class="body-final text-center justify-content-center">
+      <p style="font-size: 38px; color: white; margin-bottom: 0px">
+        <i class="fa-solid fa-envelope"></i>
+      </p>
+      <p id="texto-normal" class="pb-4" style="font-size: 24px">
+        Lluvia de sobres
+      </p>
+      <label id="texto-normal-mont" class="mx-4"
+        >Gracias por tu compañía en nuestra nueva etapa. Si quieres tener un
+        detalle con nosotros, ayúdanos a tener nuestra luna de miel
+        <i class="fa-solid fa-heart"></i>.</label
+      >
 
-    <div class="body-final text-center justify-content-center ">
-        <p style="font-size: 38px;color: white;margin-bottom: 0px;"><i class="fa-solid fa-envelope"></i></p>
-        <p id="texto-normal" class="pb-4" style="font-size: 24px;">Lluvia de sobres</p>
-        <label id="texto-normal-mont" class="mx-4">Gracias por tu compañía en nuestra nueva etapa. Si quieres tener un detalle con nosotros, ayúdanos a tener nuestra luna de miel <i class="fa-solid fa-heart"></i>.</label>
+      <p id="texto-normal-mont" class="mt-3">N° de cuenta</p>
+      <p id="texto-normal-mont" style="font-size: 22px" class="mb-2">
+        Roxana Elizalde
+      </p>
+      <label class="cuenta-banco" id="cuentaBanco">124124323132123122</label>
+      <label class="cuenta-banco">BBVA</label>
 
-        <p id="texto-normal-mont" class="mt-3" >N° de cuenta</p>
-        <p id="texto-normal-mont" style="font-size: 22px;" class="mb-2">Roxana Elizalde</p>
-        <label class="cuenta-banco" id="cuentaBanco">124124323132123122</label>
-        <label class="cuenta-banco">BBVA</label>
-        
-
-
-
-
-
-        <div class="my-4"></div>
-        <p id="texto-normal" class="pb-4" style="font-size: 24px;">Confirmar asistencia</p>
-        <label id="texto-normal-mont" class="mx-4">Tu presencia es importante para nosotros, por favor confirmanos tu asistencia por WhatsApp hasta el 10 de Diciembre</label>
-        <div class="p-3">
-
-            <a href="https://api.whatsapp.com/send?phone=1956520163&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda." class="btn-primario mx-2" >Roxana</a>
-            <a href="https://api.whatsapp.com/send?phone=19565200266&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda." class="btn-primario mx-2">Manuel</a>
-
-
-        </div>
-
+      <div class="my-4"></div>
+      <p id="texto-normal" class="pb-4" style="font-size: 24px">
+        Confirmar asistencia
+      </p>
+      <label id="texto-normal-mont" class="mx-4"
+        >Tu presencia es importante para nosotros, por favor confirmanos tu
+        asistencia por WhatsApp hasta el 10 de Diciembre</label
+      >
+      <div class="p-3">
+        <a
+          href="https://api.whatsapp.com/send?phone=1956520163&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda."
+          class="btn-primario mx-2"
+          >Roxana</a
+        >
+        <a
+          href="https://api.whatsapp.com/send?phone=19565200266&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda."
+          class="btn-primario mx-2"
+          >Manuel</a
+        >
+      </div>
     </div>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 
+  <!-- JS de Bootstrap (requiere jQuery) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-
-<!-- JS de Bootstrap (requiere jQuery) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-<script>
+  <script>
     // Fecha objetivo: 28 de diciembre de 2024
     const fechaObjetivo = new Date("2024-12-28T00:00:00").getTime();
 
     // Actualizar el contador cada segundo
     const x = setInterval(function () {
-        // Obtener la fecha y hora actual
-        const ahora = new Date().getTime();
+      // Obtener la fecha y hora actual
+      const ahora = new Date().getTime();
 
-        // Calcular la distancia entre la fecha objetivo y la fecha actual
-        const distancia = fechaObjetivo - ahora;
+      // Calcular la distancia entre la fecha objetivo y la fecha actual
+      const distancia = fechaObjetivo - ahora;
 
-        // Asegurarse de que la distancia no sea negativa
-        if (distancia < 0) {
-            document.getElementById("dias").innerHTML = "00 días";
-            document.getElementById("horas").innerHTML = "00 horas";
-            document.getElementById("minutos").innerHTML = "00 minutos";
-            document.getElementById("segundos").innerHTML = "00 segundos";
-            return; // Termina la ejecución si el tiempo ha pasado
-        }
+      // Asegurarse de que la distancia no sea negativa
+      if (distancia < 0) {
+        document.getElementById("dias").innerHTML = "00 días";
+        document.getElementById("horas").innerHTML = "00 horas";
+        document.getElementById("minutos").innerHTML = "00 minutos";
+        document.getElementById("segundos").innerHTML = "00 segundos";
+        return; // Termina la ejecución si el tiempo ha pasado
+      }
 
-        // Cálculos para obtener días, horas, minutos y segundos
-        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+      // Cálculos para obtener días, horas, minutos y segundos
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-        // Mostrar el resultado en los elementos correspondientes
-        document.getElementById("dias").innerHTML = dias;
-        document.getElementById("horas").innerHTML = horas;
-        document.getElementById("minutos").innerHTML = minutos;
-        document.getElementById("segundos").innerHTML = segundos;
+      // Mostrar el resultado en los elementos correspondientes
+      document.getElementById("dias").innerHTML = dias;
+      document.getElementById("horas").innerHTML = horas;
+      document.getElementById("minutos").innerHTML = minutos;
+      document.getElementById("segundos").innerHTML = segundos;
     }, 1000);
 
+    const label = document.getElementById("cuentaBanco");
 
-    const label = document.getElementById('cuentaBanco');
-
-    label.addEventListener('click', () => {
-        const texto = label.textContent;
-        navigator.clipboard.writeText(texto)
-            .then(() => {
-            })
-            .catch(err => {
-                console.error('Error al copiar el texto: ', err);
-            });
+    label.addEventListener("click", () => {
+      const texto = label.textContent;
+      navigator.clipboard
+        .writeText(texto)
+        .then(() => {})
+        .catch((err) => {
+          console.error("Error al copiar el texto: ", err);
+        });
     });
 
-    const playButton = document.getElementById('play-button');
-        const audio = document.getElementById('audio');
+  
 
-        playButton.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        });
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      const content = document.getElementById("content");
 
+      loader.style.display = "none";
+      content.style.display = "block";
+    });
 
-        window.addEventListener('load', function() {
-    const loader = document.getElementById('loader');
-    const content = document.getElementById('content');
+    // script.js
+    window.addEventListener("load", function () {
+      const celularesDiv = document.querySelector(".celulares");
 
-    loader.style.display = 'none';
-    content.style.display = 'block';
-});
-
-
-
-// script.js
-window.addEventListener('load', function() {
-    const celularesDiv = document.querySelector('.celulares');
-
-    if (window.innerWidth > 768) { // Ajusta este valor según tus necesidades
-        document.body.innerHTML = '<h1>Esta página solo está disponible en dispositivos móviles.</h1>';
-        document.body.style.textAlign = 'center'; // Centrar el texto
-        document.body.style.margin = '0';
-        document.body.style.padding = '20px';
-    } else {
+      if (window.innerWidth > 768) {
+        // Ajusta este valor según tus necesidades
+        document.body.innerHTML =
+          "<h1>Esta página solo está disponible en dispositivos móviles.</h1>";
+        document.body.style.textAlign = "center"; // Centrar el texto
+        document.body.style.margin = "0";
+        document.body.style.padding = "20px";
+      } else {
         // Mostrar contenido para dispositivos móviles
-    }
+      }
+    });
+
+    const playButton = document.getElementById("play-button");
+const audio = document.getElementById("audio");
+
+playButton.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
 });
 
-document.getElementById('curtain').addEventListener('click', function() {
-    this.classList.add('open');
-    // Esperar a que termine la animación antes de ocultar el div
-    setTimeout(() => {
-        this.style.display = 'none'; // Oculta la cortina
-    }, 800); // Debe coincidir con la duración de la transición CSS
+document.getElementById("curtain").addEventListener("click", function () {
+  this.classList.add("open");
+  
+  // Reproducir el audio al abrir la cortina
+  audio.play();
+
+  // Esperar a que termine la animación antes de ocultar el div
+  setTimeout(() => {
+    this.style.display = "none"; // Oculta la cortina
+  }, 800); // Debe coincidir con la duración de la transición CSS
 });
 
-</script>
-
-
-
+  </script>
 </html>
