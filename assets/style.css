@@ -361,3 +361,48 @@ html, body {
         z-index: 1; 
     }
     
+
+
+
+
+
+
+
+
+
+    .carousel {
+        position: relative;
+        max-width: 600px;
+        overflow: hidden;
+        border: 2px solid #ccc;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carousel-images img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
