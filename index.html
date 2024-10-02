@@ -30,6 +30,14 @@
 
 <body>
 
+
+    <div class="curtain" id="curtain">
+        <div class="curtain-left"><label for="28/08/2024" id="fecha" style="top: 0;display: flex;position: absolute;left: 10px; font-size: 32px; font-weight: 600;">Nuestra Boda</label></div>
+        <div class="curtain-right"><label for="28/08/2024" id="fecha" style="bottom: 0;display: flex;position: absolute;right: 10px; font-size: 18px; font-weight: 600;">28/08/2024</label></div>
+        <img src="assets/img/rym2.png" alt="" width="80%" class="curtain-image">
+    </div>
+    
+
     <div class="celulares d-none">
         <h1>Contenido para dispositivos móviles</h1>
         <p>Este contenido solo es visible en móviles.</p>
@@ -321,6 +329,14 @@ window.addEventListener('load', function() {
     } else {
         // Mostrar contenido para dispositivos móviles
     }
+});
+
+document.getElementById('curtain').addEventListener('click', function() {
+    this.classList.add('open');
+    // Esperar a que termine la animación antes de ocultar el div
+    setTimeout(() => {
+        this.style.display = 'none'; // Oculta la cortina
+    }, 800); // Debe coincidir con la duración de la transición CSS
 });
 
 </script>
