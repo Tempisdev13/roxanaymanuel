@@ -11,7 +11,10 @@
     color: antiquewhite;
 }
 
-
+#fecha{
+    font-family: "edwardian", system-ui;
+    color: #253F5A;
+}
 
 
 
@@ -292,4 +295,69 @@ html, body {
     }
 
 
+    .curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+        overflow: hidden; 
+        cursor: pointer; 
+        background: #f8f8f8; /* Color de fondo */
+    }
+    
+    .curtain-left   ,
+    .curtain-right {
+        position: absolute;
+        top: 0;
+        width: 50%; 
+        height: 100%;
+        background-color: #fff; /* Color del sobre */
+        border: 2px solid #ebebeb; /* Borde del sobre */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+        transition: transform 0.8s ease; 
+        /* Crear el efecto de solapa */
+    }
+    
+    .curtain-left {
+        left: 0;
+        border-right: none; /* Sin borde derecho para parecer que se abre */
+        transform-origin: left; /* Punto de pivote a la izquierda */
+    }
+    
+    .curtain-right {
+        right: 0;
+        border-left: none; /* Sin borde izquierdo para parecer que se abre */
+        transform-origin: right; /* Punto de pivote a la derecha */
+    }
+    
+    .curtain.open .curtain-left {
+        transform: translateX(-100%) rotateY(-10deg); /* Mover hacia la izquierda y rotar */
+    }
+    
+    .curtain.open .curtain-right {
+        transform: translateX(100%) rotateY(10deg); /* Mover hacia la derecha y rotar */
+    }
+    
+    .curtain.open .curtain-image {
+        transform: translateX(-130%); 
+        transition: transform 0.8s ease; 
+    }
+    
+    .curtain-image {
+        position: relative; 
+        z-index: 10; 
+    }
+    
+    .curtain-text {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        position: relative; 
+        z-index: 1; 
+    }
     
