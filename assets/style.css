@@ -1,604 +1,433 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <!-- CSS de Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1"
-  />
-
-  <link rel="stylesheet" href="assets/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
-  />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-  <body>
-    <div class="curtain" id="curtain">
-      <div class="curtain-left">
-        <label
-          for="28/08/2024"
-          id="fecha"
-          style="
-            top: 0;
-            display: flex;
-            position: absolute;
-            left: 10px;
-            font-size: 32px;
-            font-weight: 600;
-          "
-          >Nuestra Boda</label
-        >
-      </div>
-      <div class="curtain-right">
-        <label
-          for="28/08/2024"
-          id="fecha"
-          style="
-            bottom: 0;
-            display: flex;
-            position: absolute;
-            right: 10px;
-            font-size: 18px;
-            font-weight: 600;
-          "
-          >28/12/2024</label
-        >
-      </div>
-      <img
-        src="assets/img/nuevo-rym.jpeg"
-        alt=""
-        width="60%"
-        class="curtain-image"
-        style="
-          border-radius: 50%;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        "
-      />
-    </div>
-
-    <div class="celulares d-none">
-      <h1>Contenido para dispositivos móviles</h1>
-      <p>Este contenido solo es visible en móviles.</p>
-    </div>
-
-    <div class="body"></div>
-
-    <div class="body-final" data-aos="fade-up">
-      <label id="casamos" data-aos="fade-up">¡Nos casamos!</label>
-      <br />
-      <label id="texto-normal" class="mt-"
-        >Presiona el <i class="fa-solid fa-heart"></i> para pausar nuestra
-        canción</label
-      >
-
-      <img
-        class="img-play mt-3"
-        src="assets/img/play.png"
-        alt="Reproducir"
-        id="play-button"
-        data-aos="fade-up"
-      />
-
-      <audio id="audio" src="assets/vengodelfuturo.mp3" autoplay></audio>
-
-      <label id="texto-normal-mont" class="mt-2 m-4" data-aos="fade-up"
-        >Dios permitió que nos encontráramos y próximamente nos dará su
-        bendición para ser instrumentos de su amor y de su gracia como esposos.
-        ¡La felicidad se completa!</label
-      >
-      <img
-        class="img-play-flor mt-4"
-        src="assets/img/flores.png"
-        alt=""
-        data-aos="fade-up"
-      />
-      <label id="texto-normal" class="mt-4" data-aos="fade-up"
-        >Con la bendicion de nuestros padres</label
-      >
-      <br />
-      <label id="texto-normal" class="mt-4" data-aos="fade-up"
-        >De el novio</label
-      >
-      <br />
-      <label id="texto-normal-mont" class="" data-aos="fade-up"
-        >Paulo Elías López Morales</label
-      >
-      <br />
-      <label id="texto-normal-mont" class="" data-aos="fade-up"
-        >Carmen Patricia González Vázquez</label
-      >
-      <br />
-
-      <label id="texto-normal" class="mt-4" data-aos="fade-up"
-        >De la novia</label
-      >
-      <br />
-      <label id="texto-normal-mont" class="" data-aos="fade-up"
-        >Armando Hernandez Mendoza</label
-      >
-      <br />
-      <label id="texto-normal-mont" class="" data-aos="fade-up"
-        >Maria Guadalupe Elizalde Reynaga</label
-      >
-      <br />
-
-      <img
-        src="assets/img/foto-2.jpg"
-        alt=""
-        id="foto-tiempo"
-        class="mt-4"
-        data-aos="fade-up"
-      />
+@font-face {
+    font-family: 'edwardian';
+    src: url('edwardianscriptitc.ttf') format('truetype');
+    font-weight: normal; /* Puedes cambiarlo a bold, etc. */
+    font-style: normal;  /* Puedes cambiarlo a italic, etc. */
+}
 
 
-      <label id="text-padrinos" data-aos="fade-up">Padrinos</label>
+#nombre-boda{
+    font-family: "Aboreto", system-ui;
+    color: antiquewhite;
+}
+
+#fecha{
+    font-family: "edwardian", system-ui;
+    color: #253F5A;
+}
 
 
-      <div class="your-class" data-aos="fade-up">
-        <div>
-          <label id="logo-carousel"><i class="fa-solid fa-infinity"></i></label>
-          <br>
-          <label id="titulo-carousel">Lazo</label>
-            <br>
-          <label id="nombres-carousel">Nora Villa Meraz</label>
-          <br>
-          <label id="nombres-carousel">Jose Eduardo López</label>
-        </div>
-        <div>
-          <label id="logo-carousel"><i class="fa-solid fa-ring"></i></label>
-          <br>
-          <label id="titulo-carousel">Anillos</label>
-            <br>
-          <label id="nombres-carousel">Rosa Isela castillo</label>
-          <br>
-          <label id="nombres-carousel">Reyes Carlos González</label>
-        </div>
-        <div>
-          <label id="logo-carousel"><i class="fa-solid fa-coins"></i></label>
-          <br>
-          <label id="titulo-carousel">Arras</label>
-            <br>
-          <label id="nombres-carousel">Verónica Hernández</label>
-          <br>
-          <label id="nombres-carousel">Hilario Arellano</label>
-        </div>
-        <div>
-          <label id="logo-carousel"><i class="fa-brands fa-gitlab"></i></label>
-          <br>
-          <label id="titulo-carousel">Velación </label>
-            <br>
-          <label id="nombres-carousel">Norma Hernández           </label>
-          <br>
-          <label id="nombres-carousel">Miguel Ángel González</label>
-        </div>
-    </div>
+#text-padrinos{
+    font-family: "edwardian", system-ui;
+    color: #253F5A;
+    font-size: 48px;
+}
+
+#logo-carousel{
+    color: #253F5A;
+    font-size: 32px;
+}
+
+
+#titulo-carousel{
+    font-size: 22px;
+    color: #253F5A;
+    font-weight: 600;
+
+}
+
+#nombres-carousel{
+    font-size: 18px;
+    color: #253F5A;
+    font-weight: 300;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Resto de tu CSS ... */
 
 
 
 
+.body {
+    height: 100vh; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../assets/img/foto-body-2.jpg'); /* Imagen de fondo principal */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Necesario para el posicionamiento del overlay */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 
-    </div>
+}
 
-    <div class="text-center justify-content-center p-2">
-      <label id="texto-normal" class="" 
-        >El gran día empieza en</label
-      >
+#foto-tiempo{
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
 
-      <div class="contador mt-4 mx-4">
-        <div class="row w-100 justify-content-center">
-          <div class="col-3 text-center">
-            <div id="dias" class="tiempo-resta" data-aos="fade-down" >00</div>
-          </div>
-          <div class="col-3 text-center">
-            <div id="horas" class="tiempo-resta" data-aos="fade-down">00</div>
-          </div>
-          <div class="col-3 text-center">
-            <div id="minutos" class="tiempo-resta" data-aos="fade-down">00</div>
-          </div>
-          <div class="col-3 text-center">
-            <div id="segundos" class="tiempo-resta" data-aos="fade-down">00</div>
-          </div>
-        </div>
+}
 
-        <div class="row w-100 justify-content-center">
-          <div class="col-3 text-center">
-            <div class="tiempo-resta-dato" data-aos="fade-down">Días</div>
-          </div>
-          <div class="col-3 text-center">
-            <div class="tiempo-resta-dato" data-aos="fade-down">Horas</div>
-          </div>
-          <div class="col-3 text-center">
-            <div class="tiempo-resta-dato" data-aos="fade-down">Minutos</div>
-          </div>
-          <div class="col-3 text-center">
-            <div class="tiempo-resta-dato" data-aos="fade-down">Segundos</div>
-          </div>
-        </div>
-      </div>
+.body-final{
+    height: 100%; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    background: rgb(168,178,188);
+    background: linear-gradient(180deg, rgba(168,178,188,1) 0%, rgba(19,66,110,1) 100%);
+}
 
-      <p
-        id="texto-normal"
-        class="py-4"
-        data-aos="fade-up"
-      >
-        ¡Nos casamos!
-      </p>
+.body-tiempo{
+    height: 50px; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../assets/img/dia.png'); /* Imagen de fondo del overlay */
+    z-index: 1000;
+    position: relative;
+    margin-top: -40px;
+}
 
-      <p style="
-      color: #253f5a;
-      margin-bottom: 0px;
-      font-weight: 500;
-  ">Los esperamos para celebrar juntos el día</p>
-      <img
-        class="img-play mt-3"
-        src="assets/img/fecha.png"
-        alt=""
-        data-aos="fade-up"
-      />
 
-      <div class="row justify-content-center">
-        <img
-          class="img-anillos mt-3"
-          src="assets/img/iglesia.webp"
-          alt=""
-          data-aos="fade-up"
-        />
-      </div>
+.body-final{
+    height: auto; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../assets/img/nuevo-fondo-final.png'); /* Imagen de fondo del overlay */
+    z-index: 1000;
+    position: relative;
+    margin-top: -40px;
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 10px;
+}
 
-      <div class="row text-center justify-content-center my-3">
-        <p id="texto-normal" style="font-size: 22px" data-aos="fade-up">
-          Ceremonia religiosa
-        </p>
-      </div>
 
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">Hora: 14:00 pm</p>
-      </div>
 
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">
-          Parroquia Dulce Nombre de Jesús
-        </p>
-      </div>
+.overlay {
+    position: absolute; /* Posición absoluta para que se superponga */
+    bottom: 0; /* Empieza desde la parte inferior */
+    left: 0; /* Empieza desde la parte izquierda */
+    height: 35%; /* Ocupa el 35% de la altura */
+    width: 100%; /* Ocupa todo el ancho */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px 0; /* Espacio arriba y abajo del texto */
+}
 
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">Xicotencatl, Tamaulipas</p>
-      </div>
+#nombre-boda {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 55px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    text-align: center;
+    line-height: 55px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.066);
+}
 
-      <div class="row justify-content-center">
-        <a
-          href="https://maps.app.goo.gl/MCxfwYbApXVhjzXU6"
-          class="btn-primario"
-          data-aos="fade-up"
-          >Ver mapa</a
-        >
-      </div>
 
-      <div class="row justify-content-center">
-        <img
-          class="img-anillos mt-4"
-          src="assets/img/copas.png"
-          alt=""
-          data-aos="fade-up"
-        />
-      </div>
+#casamos{
+    color: #253F5A;
+    font-size: 28px;
+    font-family: "Aboreto", system-ui;
+    margin: 0px;
+}
 
-      <div class="row text-center justify-content-center my-3">
-        <p id="texto-normal" style="font-size: 22px" data-aos="fade-up">
-          Recepción
-        </p>
-      </div>
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">Hora: 16:00 pm</p>
-      </div>
 
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">
-          Palapa Loma Alta - Palapa de Bache
-        </p>
-      </div>
 
-      <div class="row text-center justify-content-center">
-        <p class="texto-datos" data-aos="fade-up">Loma Alta, Tamaulipas</p>
-      </div>
 
-      <div class="row justify-content-center">
-        <a
-          href="https://maps.app.goo.gl/XVMovfLFRKHocXQ7A"
-          class="btn-primario"
-          data-aos="fade-up"
-          >Ver mapa</a
-        >
-      </div>
+#texto-normal{
+    color: #253F5A;
+    font-size: 38px;
+    font-family: "edwardian", system-ui;
+    margin: 0px;
+    font-weight: 600;
+}
 
-      <img
-        src="assets/img/foto-3.jpg"
-        alt=""
-        id="foto-tiempo"
-        class="mt-4"
-        data-aos="fade-up"
-      />
-    </div>
+#texto-normal-mont{
+    color: #253F5A;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-weight: 600;
+}
 
-    <div class="body-final text-center justify-content-center">
-      <p
-        id="texto-normal"
-        class="py-4"
-        data-aos="fade-up"
-      >
-        Intinerario
-      </p>
 
-      <img
-        class="img-play mt-3"
-        src="assets/img/dancing2.png"
-        alt=""
-        style="padding-bottom: 30px"
-        data-aos="fade-up"
-      />
 
-      <div class="carousel">
-        <div class="carousel-images">
-          <img src="assets/img/foto-1c.jpg" class="active" alt="Imagen 1" />
-          <img src="assets/img/foto-2c.jpg" class="active" alt="Imagen 1" />
-          <img src="assets/img/foto-3c.jpg" class="active" alt="Imagen 1" />
-          <img src="assets/img/foto-4c.jpg" class="active" alt="Imagen 1" />
-          <img src="assets/img/foto-5c.png" class="active" alt="Imagen 1" />
+.img-play {
+    width: 80%;
+    height: auto; /* Mantiene la proporción */
+}
 
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-    </div>
+.img-anillos{
+    width: 20%;
+    height: auto; /* Mantiene la proporción */
+}
 
-    <div class="body-final text-center justify-content-center">
-      <p
-        style="font-size: 38px; color: #253f5a; margin-bottom: 0px"
-        data-aos="fade-up"
-      >
-        <i class="fa-solid fa-envelope"></i>
-      </p>
-      <p
-        id="texto-normal"
-        class="pb-4"      
-        data-aos="fade-up"
-      >
-        Lluvia de sobres
-      </p>
-      <label id="texto-normal-mont" class="mx-4" data-aos="fade-up"
-        >Que nos acompañes es lo más importante! Y si está en tu disposición
-        realizar una muestra de cariño estaremos muy agradecidos.
-        <i class="fa-solid fa-heart"></i>.</label
-      >
 
-      <p id="texto-normal-mont" class="mt-3" data-aos="fade-up">N° de cuenta</p>
-      <p
-        id="texto-normal-mont"
-        style="font-size: 22px"
-        class="mb-2"
-        data-aos="fade-up"
-      >
-        Roxana Elizalde
-      </p>
-      <label class="cuenta-banco" id="cuentaBanco" data-aos="fade-up"
-        >124124323132123122</label
-      >
-      <label class="cuenta-banco" data-aos="fade-up">BBVA</label>
+.img-play-flor{
+    width: 80%;
+    height: auto; /* Mantiene la proporción */
+}
 
-      <div class="my-4"></div>
-      <p
-        id="texto-normal"
-        class="pb-4"
-        data-aos="fade-up"
-      >
-        Confirmar asistencia
-      </p>
-      <label id="texto-normal-mont" class="mx-4" data-aos="fade-up"
-        >Tu presencia es importante para nosotros, por favor confirmanos tu
-        asistencia por WhatsApp hasta el 10 de Diciembre</label
-      >
-      <div class="p-3">
-        <a
-          href="https://api.whatsapp.com/send?phone=1956520163&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda."
-          class="btn-primario mx-2"
-          >Roxana</a
-        >
-        <a
-          href="https://api.whatsapp.com/send?phone=19565200266&text=Hola!%0A%0AQuiero%20confirmar%20mi%20asistencia%20a%20la%20boda."
-          class="btn-primario mx-2"
-          >Manuel</a
-        >
-      </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-  </body>
+.body-dos{
+    height: auto;
+    background-color: #A8B2BC;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 35px;
+ 
 
-  <!-- JS de Bootstrap (requiere jQuery) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+}
 
-  <script>
-    AOS.init();
 
+.btn-primario{
+
+    border: none;
+    background-color:#fff ;
+    color: #253F5A;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 600;
+}
+.body-noscasamos{
+    background: rgb(168,178,188);
+    background: linear-gradient(180deg, rgba(168,178,188,1) 0%, rgba(19,66,110,1) 100%);
+}
+
+
+.texto-datos{
+    color: #253F5A;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-weight: 600;
+}
+
+
+
+
+  /* Media Query para pantallas más pequeñas (ej. tablets) */
+  @media (max-width: 768px) {
+    .titulo-2 {
+        font-size: 20px;
+    }
+    .titulo{
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .texto{
+        font-size: 16px;
+    }
     
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      const slides = document.querySelectorAll(".carousel-images img");
-      if (index >= slides.length) {
-        currentSlide = 0;
-      } else if (index < 0) {
-        currentSlide = slides.length - 1;
-      } else {
-        currentSlide = index;
-      }
-
-      const offset = -currentSlide * 100; // Move the slides
-      document.querySelector(
-        ".carousel-images"
-      ).style.transform = `translateX(${offset}%)`;
+    .numero{
+        font-size: 14px;
+    }
+        .main-content {
+            padding: 10px;
+        }
     }
 
-    function moveSlide(direction) {
-      showSlide(currentSlide + direction);
+/* Media Query para pantallas aún más pequeñas (ej. smartphones) */
+    @media (max-width: 480px) {
+        .header, .footer {
+            font-size: 16px;
+        }
+
+        .titulo-2 {
+            font-size: 20px;
+        }
+        .titulo{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .texto{
+            font-size: 14px;
+        }
+
+        .numero{
+            font-size: 14px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .texto-lista{
+            font-size: 16px;
+        }
+
+
+        .row-principal{
+            width: 95%;
+        }
+
+
     }
 
-    // Mostrar la primera imagen al cargar
-    showSlide(currentSlide);
 
-    // Fecha objetivo: 28 de diciembre de 2024
-    const fechaObjetivo = new Date("2024-12-28T00:00:00").getTime();
+    .tiempo-resta{
+        font-size: 26px;
+        color: #253F5A;
+        font-weight: 600;
+    }
 
-    // Actualizar el contador cada segundo
-    const x = setInterval(function () {
-      // Obtener la fecha y hora actual
-      const ahora = new Date().getTime();
+    .tiempo-resta-dato{
+        font-size: 12px;
+        color: #253F5A;
+        font-weight: 600;
+    }
 
-      // Calcular la distancia entre la fecha objetivo y la fecha actual
-      const distancia = fechaObjetivo - ahora;
-
-      // Asegurarse de que la distancia no sea negativa
-      if (distancia < 0) {
-        document.getElementById("dias").innerHTML = "00 días";
-        document.getElementById("horas").innerHTML = "00 horas";
-        document.getElementById("minutos").innerHTML = "00 minutos";
-        document.getElementById("segundos").innerHTML = "00 segundos";
-        return; // Termina la ejecución si el tiempo ha pasado
-      }
-
-      // Cálculos para obtener días, horas, minutos y segundos
-      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor(
-        (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-      // Mostrar el resultado en los elementos correspondientes
-      document.getElementById("dias").innerHTML = dias;
-      document.getElementById("horas").innerHTML = horas;
-      document.getElementById("minutos").innerHTML = minutos;
-      document.getElementById("segundos").innerHTML = segundos;
-    }, 1000);
-
-    const label = document.getElementById("cuentaBanco");
-
-    label.addEventListener("click", () => {
-      const texto = label.textContent;
-      navigator.clipboard
-        .writeText(texto)
-        .then(() => {})
-        .catch((err) => {
-          console.error("Error al copiar el texto: ", err);
-        });
-    });
-
-    window.addEventListener("load", function () {
-      const loader = document.getElementById("loader");
-      const content = document.getElementById("content");
-
-      loader.style.display = "none";
-      content.style.display = "block";
-    });
-
-    // script.js
-    window.addEventListener("load", function () {
-      const celularesDiv = document.querySelector(".celulares");
-
-      if (window.innerWidth > 768) {
-        // Ajusta este valor según tus necesidades
-        document.body.innerHTML =
-          "<h1>Esta página solo está disponible en dispositivos móviles.</h1>";
-        document.body.style.textAlign = "center"; // Centrar el texto
-        document.body.style.margin = "0";
-        document.body.style.padding = "20px";
-      } else {
-        // Mostrar contenido para dispositivos móviles
-      }
-    });
-
-    const playButton = document.getElementById("play-button");
-    const audio = document.getElementById("audio");
-
-    playButton.addEventListener("click", () => {
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    });
-
-    document.getElementById("curtain").addEventListener("click", function () {
-      this.classList.add("open");
-
-      // Reproducir el audio al abrir la cortina
-      audio.play();
-
-      // Esperar a que termine la animación antes de ocultar el div
-      setTimeout(() => {
-        this.style.display = "none"; // Oculta la cortina
-      }, 800); // Debe coincidir con la duración de la transición CSS
-    });
-  </script>
+    .cuenta-banco{
+        width: 80%;
+        border: none;
+        background-color:#fff ;
+        color: #253F5A;
+        padding: 6px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
 
 
-<script>
-  $(document).ready(function(){
-      $('.your-class').slick({
-          dots: true,        // Muestra los puntos de navegación
-          infinite: true,    // Carrusel infinito
-          speed: 1500,        // Velocidad de transición
-          slidesToShow: 1,   // Número de slides visibles
-          slidesToScroll: 1, // Número de slides a desplazar
-          autoplay: true,     // Autoplay
-          autoplaySpeed: 2000 // Velocidad de autoplay
-      });
-  });
-</script>
+    .curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+        overflow: hidden; 
+        cursor: pointer; 
+        background: #f8f8f8; /* Color de fondo */
+    }
+    
+    .curtain-left   ,
+    .curtain-right {
+        position: absolute;
+        top: 0;
+        width: 50%; 
+        height: 100%;
+        background-color: #fff; /* Color del sobre */
+        border: 2px solid #ebebeb; /* Borde del sobre */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+        transition: transform 0.8s ease; 
+        /* Crear el efecto de solapa */
+    }
+    
+    .curtain-left {
+        left: 0;
+        border-right: none; /* Sin borde derecho para parecer que se abre */
+        transform-origin: left; /* Punto de pivote a la izquierda */
+    }
+    
+    .curtain-right {
+        right: 0;
+        border-left: none; /* Sin borde izquierdo para parecer que se abre */
+        transform-origin: right; /* Punto de pivote a la derecha */
+    }
+    
+    .curtain.open .curtain-left {
+        transform: translateX(-100%) rotateY(-10deg); /* Mover hacia la izquierda y rotar */
+    }
+    
+    .curtain.open .curtain-right {
+        transform: translateX(100%) rotateY(10deg); /* Mover hacia la derecha y rotar */
+    }
+    
+    .curtain.open .curtain-image {
+        transform: translateX(-130%); 
+        transition: transform 0.8s ease; 
+    }
+    
+    .curtain-image {
+        position: relative; 
+        z-index: 10; 
+    }
+    
+    .curtain-text {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        position: relative; 
+        z-index: 1; 
+    }
+    
 
 
-</html>
+
+
+
+
+
+
+
+    .carousel {
+        position: relative;
+        max-width: 600px;
+        overflow: hidden;
+        border: 2px solid #ccc;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .carousel-images img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
