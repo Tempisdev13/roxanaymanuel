@@ -17,6 +17,31 @@
 }
 
 
+#text-padrinos{
+    font-family: "edwardian", system-ui;
+    color: #253F5A;
+    font-size: 48px;
+}
+
+#logo-carousel{
+    color: #253F5A;
+    font-size: 32px;
+}
+
+
+#titulo-carousel{
+    font-size: 22px;
+    color: #253F5A;
+    font-weight: 600;
+
+}
+
+#nombres-carousel{
+    font-size: 18px;
+    color: #253F5A;
+    font-weight: 300;
+}
+
 
 html, body {
     margin: 0;
