@@ -6,6 +6,8 @@
 }
 
 
+
+
 #nombre-boda{
     font-family: "Aboreto", system-ui;
     color: antiquewhite;
@@ -332,7 +334,7 @@ html, body {
         z-index: 1100;
         overflow: hidden; 
         cursor: pointer; 
-        background: #f8f8f8; /* Color de fondo */
+        background: #faf9f7; /* Color de fondo */
     }
     
     .curtain-left   ,
@@ -341,7 +343,7 @@ html, body {
         top: 0;
         width: 50%; 
         height: 100%;
-        background-color: #fff; /* Color del sobre */
+        background-color: #faf9f7; /* Color del sobre */
         border: 2px solid #ebebeb; /* Borde del sobre */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
         transition: transform 0.8s ease; 
