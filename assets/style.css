@@ -31,18 +31,22 @@
 }
 
 
-#titulo-carousel{
-    font-size: 22px;
-    color: #253F5A;
-    font-weight: 600;
 
+.carousel-item {
+    opacity: 0;  /* Comienza invisible */
+    transition: opacity 0.5s ease;  /* Suaviza la transición */
 }
 
+.slick-active {
+    opacity: 1;  /* Solo el activo será visible */
+}
 #nombres-carousel{
     font-size: 18px;
     color: #253F5A;
     font-weight: 300;
 }
+
+
 
 
 html, body {
