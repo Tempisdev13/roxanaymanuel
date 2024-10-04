@@ -119,7 +119,7 @@
         data-aos="fade-up"
       />
 
-      <audio id="audio" src="assets/vengodelfuturo.mp3" autoplay></audio>
+      <audio id="audio" src="assets/vengodelfuturo.mp3" ></audio>
 
       <label id="texto-normal-mont" class="mt-2 m-4" data-aos="fade-up"
         >Dios permitió que nos encontráramos y próximamente nos dará su
@@ -465,13 +465,13 @@
                   </button>
               </div>
               <div class="modal-body">
-                  <video width="100%" height="auto" controls muted autoplay>
-                      <source src="assets/img/Pedida de mano.mp4" type="video/mp4">
+                  <video width="100%" height="auto" controls autoplay>
+                      <source src="assets/img/boda-inicio.mp4" type="video/mp4">
                       Tu navegador no soporta el elemento de video.
                   </video>
               </div>
               <div class="modal-footer justify-content-center" style="position: relative;display: list-item;">
-                  <button type="button" class="btn btn-secondary" style="width: 99%;justify-content: center;align-content: center;display: flex;position: relative; background-color: 253F5A;" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-secondary" style="width: 99%;justify-content: center;align-content: center;display: flex;position: relative; background-color: 253F5A;" id="btn-cerrar" data-dismiss="modal">Cerrar</button>
               </div>
           </div>
       </div>
@@ -614,13 +614,21 @@
       this.classList.add("open");
 
       // Reproducir el audio al abrir la cortina
-      audio.play();
 
       // Esperar a que termine la animación antes de ocultar el div
       setTimeout(() => {
         this.style.display = "none"; // Oculta la cortina
       }, 800); // Debe coincidir con la duración de la transición CSS
     });
+
+
+    document.getElementById("btn-cerrar").addEventListener("click", function () {
+ 
+      setTimeout(() => {
+        audio.play();
+      }, 800); // Debe coincidir con la duración de la transición CSS
+    });
+
 
 
 
